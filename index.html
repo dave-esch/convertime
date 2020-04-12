@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convert Hours and Minutes to Decimal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+</head>
+
+<body>
+    <h1>Convert Hours and Minutes</br>to Decimal</h1>
+
+    <p>
+        <label for="hours">Hours</label>
+        <input type="number" id="hours">
+    </p>
+
+    <p>
+        <label for="minutes">Minutes</label>
+        <input type="number" id="minutes">
+    </p>
+
+    <button onclick="Convert()">Convert</button>
+
+    <p>Decimal Hours</p>
+    <p id="decimal"></p>
+
+    <button class="btn" data-clipboard-target="#decimal">Copy</button>
+
+    <div class="footer">
+        <p>Buy <a href="https://www.linkedin.com/in/dvsmehlik/" target="_blank">me</a> a cup of <a href="https://ko-fi.com/akuataya" target="_blank">coffee</a> or get something cool on my <a href="https://www.etsy.com/shop/akuataya" target="_blank">Etsy Store</a>.</p>
+    </div>
+
+    <script type="text/javascript">
+
+        function Convert() {
+        var x = document.getElementById("hours").value;
+        var y = document.getElementById("minutes").value;
+        var z = ((+x*60) + +y)/60;
+        var numb = z;
+        numb = +numb.toFixed(2);
+        document.getElementById("decimal").innerHTML = numb;
+        }
+
+        var clipboard = new ClipboardJS('.btn');
+
+    </script>
+
+</body>
+</html>
