@@ -60,13 +60,20 @@ button {
     cursor: pointer;
     margin-bottom: 45px;
     outline: none;
+    width: 92px;
 }
 
 button:hover {
     background-color: #1D7DFF;
 }
 
+/*
 button:focus {
+    background-color: #0F50A9;
+}
+*/
+
+button:active {
     background-color: #0F50A9;
 }
 
