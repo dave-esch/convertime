@@ -9,7 +9,15 @@ body {
 h1 {
     font-size: 2em;
     font-weight: 700;
-    margin: 40px 0 35px 0;
+    margin: 40px 0 0 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 35px 0;
+    color: #828282;
+    /* font-style: italic; */
 }
 
 p {
@@ -100,8 +108,8 @@ a {
 @media only screen and (max-width: 500px) {
 
     h1 {
-    font-size: 1.6em;
-    margin: 20px 0 30px 0;
+    /* font-size: 1.6em; */
+    margin: 20px 0 0px 0;
     }
 
     body {
