@@ -1,2 +1,2 @@
 # Convertime
-Convert Hours and Minutes to Decimal → https://convertime.netlify.com
+Convert hours and minutes to decimal → https://convertime.netlify.com
